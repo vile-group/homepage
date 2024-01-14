@@ -1,8 +1,10 @@
 +++
-title = 'Home'
+title = '&#9216 - Home'
 date = 2023-01-01T08:00:00-07:00
-draft = true
+draft = false
 +++
+&#9215;
+⏿
 
 Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat
 pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim
