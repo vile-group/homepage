@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{/* <h1>{{ .Title }}</h1> */}}
+  {{ .Content }}
+
+  <div class="holdings-tiles">
+    {{ range .Pages }}
+      <div class="holding-tile">
+        {{ with .Params.image }} <!-- Assuming there's an 'image' field in your content's front matter -->
+          <div class="holding-image">
+            <img src="{{ . | absURL }}" alt="{{ $.Title }}">
+          </div>
+        {{ end }}
+        <div class="holding-content">
+          <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+          {{ .Summary }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

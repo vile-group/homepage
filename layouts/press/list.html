@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{/*  <h1>{{ .Title }}</h1>  */}}
+  {{ .Content }}
+  {{ range .Pages }}
+    {{/*  <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}  */}}
+
+    <ul class="posts">
+          {{ if ne .Kind "section" }}
+          <li itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+
+            <hr>
+           <time datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>
+          </li>
+        {{ end }}
+      </ul>
+
+  {{ end }}
+{{ end }}
+
+

@@ -1,9 +1,7 @@
+<hr>
 <ul>
-
 {{/*  <p>Copyright {{ now.Year }}. All rights reserved.</p>  */}}
-
 <li> &copy; {{ now.Year }}. All rights reserved.</li>
-
 {{ range .Site.Menus.footer }}
     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
   {{ end }}
