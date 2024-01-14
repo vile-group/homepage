@@ -13,7 +13,7 @@ new_num=$((file_count + 1))
 echo "New file number: $new_num"
 
 # Format the new file name
-new_file_name=$(printf "%05d.md" $new_num)
+new_file_name=$(printf "%04d.md" $new_num)
 
 # Navigate back to Hugo site directory
 cd "$HUGO_SITE_DIR"
