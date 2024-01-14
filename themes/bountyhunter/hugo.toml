@@ -3,19 +3,41 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 
 [[menus.main]]
-name = 'Home'
+name = '⏿'
 pageRef = '/'
 weight = 10
 
+# [[menus.main]]
+# name = 'Posts'
+# pageRef = '/posts'
+# weight = 20
+
+# [[menus.main]]
+# name = 'Tags'
+# pageRef = '/tags'
+# weight = 30
+
 [[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
+name = 'Holdings'
+pageRef = '/holdings'
 weight = 20
 
 [[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
+name = 'Press'
+pageRef = '/press'
 weight = 30
+
+[[menus.main]]
+name = 'RSS'
+url = '/index.xml'
+weight = 40
+
+
+[[menus.footer]]
+  name = "Policies"
+  url = "/policies/"
+  weight = 1
+
 
 [module]
   [module.hugoVersion]

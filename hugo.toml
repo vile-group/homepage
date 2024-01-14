@@ -2,3 +2,17 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'bountyhunter'
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
+copyright = '© 2023 ABC Widgets, Inc.'
+[params]
+ description = "Your site description here"
+  [params.author]
+    email = 'jdoe@example.org'
+    name = 'John Doe'
+
